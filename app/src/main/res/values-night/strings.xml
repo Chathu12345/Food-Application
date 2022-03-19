@@ -3,4 +3,10 @@
     <string name="open_table_restaurant">Open Table Restaurant</string>
     <string name="explore_your_fav_foods">Explore Your Fav Foods</string>
     <string name="sign_in">Sign In</string>
+    <string name="register">Register</string>
+    <string name="full_name">Full Name</string>
+    <string name="email_address">Email Address</string>
+    <string name="password">Password</string>
+    <string name="daily_meal">Daily Meal</string>
+    <string name="favourite">Favourite</string>
 </resources>
