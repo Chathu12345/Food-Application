@@ -7,7 +7,7 @@
     tools:context=".WelcomeActivity">
 
     <ImageView
-        android:id="@+id/IVBackImage"
+        android:id="@+id/IVBackImageWel"
         android:foreground="@drawable/foreground_design"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -15,21 +15,21 @@
         android:scaleType="centerCrop"/>
 
     <TextView
-        android:id="@+id/TVTitle"
+        android:id="@+id/TVTitleWel"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/open_table_restaurant"
         android:textAlignment="center"
         android:textColor="@color/white"
         android:textSize="33sp"
+        android:fontFamily="@font/lobster"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias=".4"
-        android:fontFamily="@font/lobster"/>
+        app:layout_constraintVertical_bias=".4"/>
 
     <TextView
-        android:id="@+id/TVDesc"
+        android:id="@+id/TVDescWel"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/explore_your_fav_foods"
@@ -38,38 +38,40 @@
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/TVTitle"/>
+        app:layout_constraintTop_toBottomOf="@+id/TVTitleWel"/>
 
     <Button
         android:id="@+id/BnRegistration"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        app:layout_constraintWidth_percent=".8"
         android:text="Register"
+        android:onClick="register"
         android:textColor="@color/white"
         android:padding="14dp"
         android:textStyle="bold"
         android:textAllCaps="false"
+        android:background="@drawable/btn_bg_design"
+        android:theme="@style/Theme.FoodApplication.Button"
+        app:layout_constraintWidth_percent=".8"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/TVDesc"
-        app:layout_constraintVertical_bias=".7"
-        android:background="@drawable/btn_bg_design"
-        android:theme="@style/Theme.FoodApplication.Button"/>
+        app:layout_constraintTop_toBottomOf="@+id/TVDescWel"
+        app:layout_constraintVertical_bias=".7"/>
 
     <TextView
+        android:id="@+id/TVSignIn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/sign_in"
         android:textColor="#FBFBFB"
         android:textStyle="bold"
         android:textSize="16sp"
+        android:textAlignment="center"
+        android:background="@drawable/btn_bg_design"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/BnRegistration"
-        android:textAlignment="center"
-        android:background="@drawable/btn_bg_design"/>
+        app:layout_constraintTop_toBottomOf="@+id/BnRegistration" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
