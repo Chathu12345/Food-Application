@@ -10,4 +10,7 @@
     <string name="menu_home">Home</string>
     <string name="menu_gallery">Gallery</string>
     <string name="menu_slideshow">Slideshow</string>
+    <string name="open_table_restaurant">Open Table Restaurant</string>
+    <string name="explore_your_fav_foods">Explore Your Fav Foods</string>
+    <string name="sign_in">Sign In</string>
 </resources>
