@@ -1,4 +1,4 @@
-package com.chathu.foodapplication.ui.home;
+package com.chathu.foodapplication.ui.gallery;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -10,12 +10,12 @@ import androidx.fragment.app.Fragment;
 
 import com.chathu.foodapplication.R;
 
-public class HomeFragment extends Fragment {
+public class DailyMealFragment extends Fragment {
+
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
-
-        View root = inflater.inflate(R.layout.fragment_home, container, false);
+        View root = inflater.inflate(R.layout.daily_meal_fragment, container, false);
 
         return root;
     }
