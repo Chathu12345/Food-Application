@@ -1,12 +1,14 @@
-package com.chathu.foodapplication;
-
-import androidx.appcompat.app.AppCompatActivity;
+package com.chathu.foodapplication.activities;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
+
+import androidx.appcompat.app.AppCompatActivity;
+
+import com.chathu.foodapplication.R;
 
 public class WelcomeActivity extends AppCompatActivity {
 
@@ -20,10 +22,10 @@ public class WelcomeActivity extends AppCompatActivity {
     }
 
     public void register(View view) {
-        startActivity(new Intent(WelcomeActivity.this,RegistrationActivity.class));
+        startActivity(new Intent(WelcomeActivity.this, RegistrationActivity.class));
     }
 
     public void login(View view) {
-        startActivity(new Intent(WelcomeActivity.this,LoginActivity.class));
+        startActivity(new Intent(WelcomeActivity.this, LoginActivity.class));
     }
 }
