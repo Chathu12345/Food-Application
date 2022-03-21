@@ -12,6 +12,7 @@
         android:layout_height="wrap_content">
 
         <ImageView
+            android:id="@+id/ver_image"
             android:layout_width="match_parent"
             android:layout_height="250dp"
             android:scaleType="center"
@@ -22,9 +23,18 @@
             app:layout_constraintTop_toTopOf="parent"/>
 
         <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayout"
             android:layout_width="match_parent"
             android:layout_height="90dp"
-            android:id="@+id/constraintLayout"/>
+            android:background="@drawable/round_bg"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="1">
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
