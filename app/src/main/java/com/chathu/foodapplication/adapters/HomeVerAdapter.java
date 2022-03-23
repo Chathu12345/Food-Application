@@ -4,6 +4,8 @@ import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
+import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
@@ -42,9 +44,18 @@ public class HomeVerAdapter extends RecyclerView.Adapter<HomeVerAdapter.ViewHold
 
     public class ViewHolder extends RecyclerView.ViewHolder{
 
+        ImageView imageView;
+        TextView name,timing,rating,price;
 
         public ViewHolder(@NonNull View itemView) {
+
             super(itemView);
+            imageView = itemView.findViewById(R.id.ver_image);
+            name = itemView.findViewById(R.id.ver_name);
+            timing = itemView.findViewById(R.id.ver_timing);
+            rating = itemView.findViewById(R.id.rating);
+            price = itemView.findViewById(R.id.price);
+
         }
     }
 }
