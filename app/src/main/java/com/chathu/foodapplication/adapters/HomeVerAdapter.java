@@ -39,7 +39,10 @@ public class HomeVerAdapter extends RecyclerView.Adapter<HomeVerAdapter.ViewHold
         return list.size();
     }
 
+
     public class ViewHolder extends RecyclerView.ViewHolder{
+
+
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
         }
