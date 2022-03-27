@@ -13,6 +13,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.chathu.foodapplication.R;
 import com.chathu.foodapplication.models.HomeHorModel;
+import com.chathu.foodapplication.models.HomeVerModel;
 
 import java.util.ArrayList;
 
@@ -45,8 +46,11 @@ public class HomeHorAdapter extends RecyclerView.Adapter<HomeHorAdapter.ViewHold
 
         if (check){
 
-            ArrayList<HomeVerAdapter> homeVerAdapters = new ArrayList<>();
-            homeVerModels.add(new HomeVerModel(R.drawable.pizza1,"Pizza","10:00-23:00","4.9","Min - $34"));
+            ArrayList<HomeVerModel> homeVerModels = new ArrayList<>();
+            homeVerModels.add(new HomeVerModel(R.drawable.pizza1,"Pizza 1","10:00-23:00","4.9","Min - $34"));
+            homeVerModels.add(new HomeVerModel(R.drawable.pizza2,"Pizza 2","10:00-23:00","4.9","Min - $34"));
+            homeVerModels.add(new HomeVerModel(R.drawable.pizza3,"Pizza 3","10:00-23:00","4.9","Min - $34"));
+            homeVerModels.add(new HomeVerModel(R.drawable.pizza4,"Pizza 4","10:00-23:00","4.9","Min - $34"));
 
         }
     }
