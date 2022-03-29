@@ -44,16 +44,18 @@ public class HomeHorAdapter extends RecyclerView.Adapter<HomeHorAdapter.ViewHold
         holder.imageView.setImageResource(list.get(position).getImage());
         holder.name.setText(list.get(position).getName());
 
-        if (check){
+        if (check) {
 
             ArrayList<HomeVerModel> homeVerModels = new ArrayList<>();
-            homeVerModels.add(new HomeVerModel(R.drawable.pizza1,"Pizza 1","10:00-23:00","4.9","Min - $34"));
-            homeVerModels.add(new HomeVerModel(R.drawable.pizza2,"Pizza 2","10:00-23:00","4.9","Min - $34"));
-            homeVerModels.add(new HomeVerModel(R.drawable.pizza3,"Pizza 3","10:00-23:00","4.9","Min - $34"));
-            homeVerModels.add(new HomeVerModel(R.drawable.pizza4,"Pizza 4","10:00-23:00","4.9","Min - $34"));
+            homeVerModels.add(new HomeVerModel(R.drawable.pizza1, "Pizza 1", "10:00-23:00", "4.9", "Min - $34"));
+            homeVerModels.add(new HomeVerModel(R.drawable.pizza2, "Pizza 2", "10:00-23:00", "4.9", "Min - $34"));
+            homeVerModels.add(new HomeVerModel(R.drawable.pizza3, "Pizza 3", "10:00-23:00", "4.9", "Min - $34"));
+            homeVerModels.add(new HomeVerModel(R.drawable.pizza4, "Pizza 4", "10:00-23:00", "4.9", "Min - $34"));
 
             updateVerticalRec.callBack(position, homeVerModels);
             check = false;
+        }
+
             holder.cardView.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
@@ -63,7 +65,7 @@ public class HomeHorAdapter extends RecyclerView.Adapter<HomeHorAdapter.ViewHold
                     if (position == 1){
 
                         ArrayList<HomeVerModel> homeVerModels = new ArrayList<>();
-                        homeVerModels.add(new HomeVerModel(R.drawable.hamburger,"Burger 1","10:00-23:00","4.9","Min - $34"));
+                        homeVerModels.add(new HomeVerModel(R.drawable.burger1,"Burger 1","10:00-23:00","4.9","Min - $34"));
                         homeVerModels.add(new HomeVerModel(R.drawable.burger2,"Burger 2","10:00-23:00","4.9","Min - $34"));
                         homeVerModels.add(new HomeVerModel(R.drawable.burger4,"Burger 3","10:00-23:00","4.9","Min - $34"));
 
@@ -105,6 +107,7 @@ public class HomeHorAdapter extends RecyclerView.Adapter<HomeHorAdapter.ViewHold
             if (select){
                 if (position == 0){
                     holder.cardView.setBackgroundResource(R.drawable.change_bg);
+                    select = false;
                 }
             }
 
@@ -116,7 +119,6 @@ public class HomeHorAdapter extends RecyclerView.Adapter<HomeHorAdapter.ViewHold
                 }
             }
         }
-    }
 
     @Override
     public int getItemCount() {
