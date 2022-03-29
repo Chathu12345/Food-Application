@@ -13,14 +13,14 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.chathu.foodapplication.R;
 import com.chathu.foodapplication.models.HomeVerModel;
 
-import java.util.List;
+import java.util.ArrayList;
 
 public class HomeVerAdapter extends RecyclerView.Adapter<HomeVerAdapter.ViewHolder> {
 
     Context context;
-    List<HomeVerModel> list;
+    ArrayList<HomeVerModel> list;
 
-    public HomeVerAdapter(Context context, List<HomeVerModel> list) {
+    public HomeVerAdapter(Context context, ArrayList<HomeVerModel> list) {
         this.context = context;
         this.list = list;
     }
