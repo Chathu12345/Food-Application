@@ -1,11 +1,16 @@
 package com.chathu.foodapplication.adapters;
 
 import android.content.Context;
+import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
+import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
+
+import com.chathu.foodapplication.R;
 
 import java.util.List;
 
@@ -14,10 +19,15 @@ public class  DailyMealAdapter extends RecyclerView.Adapter<DailyMealAdapter.Vie
     Context context;
     List<DailyMealAdapter> list;
 
+    public DailyMealAdapter(Context context, List<DailyMealAdapter> list) {
+        this.context = context;
+        this.list = list;
+    }
+
     @NonNull
     @Override
     public ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        return null;
+        return new ViewHolder(LayoutInflater.from(parent.getContext()).inflate(R.layout.daily_meal_item,parent,false));
     }
 
     @Override
@@ -27,12 +37,21 @@ public class  DailyMealAdapter extends RecyclerView.Adapter<DailyMealAdapter.Vie
 
     @Override
     public int getItemCount() {
-        return 0;
+        return list.size();
     }
 
     public class  ViewHolder extends RecyclerView.ViewHolder {
+
+        ImageView imageView;
+        TextView name,description,discount;
+
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
+
+            imageView = itemView.findViewById(R.id.im_daily_meal);
+            name = itemView.findViewById(R.id.textView2);
+            description = itemView.findViewById(R.id.textView3);
+            discount = itemView.findViewById(R.id.discount);
         }
     }
 }
