@@ -11,15 +11,16 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.chathu.foodapplication.R;
+import com.chathu.foodapplication.models.DailyMealModel;
 
 import java.util.List;
 
 public class  DailyMealAdapter extends RecyclerView.Adapter<DailyMealAdapter.ViewHolder> {
 
     Context context;
-    List<DailyMealAdapter> list;
+    List<DailyMealModel> list;
 
-    public DailyMealAdapter(Context context, List<DailyMealAdapter> list) {
+    public DailyMealAdapter(Context context, List<DailyMealModel> list) {
         this.context = context;
         this.list = list;
     }
@@ -32,6 +33,12 @@ public class  DailyMealAdapter extends RecyclerView.Adapter<DailyMealAdapter.Vie
 
     @Override
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
+
+        holder.imageView.setImageResource(list.get(position).getImage());
+        holder.name.setText(list.get(position).getName());
+        holder.description.setText(list.get(position).getDescription());
+        holder.discount.setText(list.get(position).getDiscount());
+
 
     }
 
