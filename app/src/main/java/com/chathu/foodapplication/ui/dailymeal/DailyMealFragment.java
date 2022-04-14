@@ -38,6 +38,10 @@ public class DailyMealFragment extends Fragment {
         dailyMealModels.add(new DailyMealModel(R.drawable.sweets,"Sweets","40% OFF","Description Description"));
         dailyMealModels.add(new DailyMealModel(R.drawable.coffe,"Coffee","10% OFF","Description Description"));
 
+        dailyMealAdapter = new DailyMealAdapter(getContext(),dailyMealModels);
+        recyclerView.setAdapter(dailyMealAdapter);
+        dailyMealAdapter.notifyDataSetChanged();
+
         return root;
     }
 }
