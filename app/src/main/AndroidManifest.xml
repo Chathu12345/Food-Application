@@ -9,11 +9,12 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.FoodApplication">
-        <activity android:name=".activities.RegistrationActivity"></activity>
+        <activity
+            android:name=".activities.DetailedDailyMealActivity"
+            android:exported="false" />
+        <activity android:name=".activities.RegistrationActivity" />
         <activity android:name=".activities.LoginActivity" />
-        <activity android:name=".activities.WelcomeActivity">
-
-        </activity>
+        <activity android:name=".activities.WelcomeActivity"></activity>
         <activity
             android:name=".MainActivity"
             android:label="@string/app_name"
