@@ -24,13 +24,13 @@
             <ImageView
                 android:layout_width="match_parent"
                 android:layout_height="240dp"
-                android:src="@drawable/breakfast"
-                android:scaleType="centerCrop"/>
+                android:scaleType="centerCrop"
+                android:src="@drawable/breakfast" />
 
             <androidx.appcompat.widget.Toolbar
                 android:layout_width="match_parent"
                 android:layout_height="?attr/actionBarSize"
-                app:titleTextColor="@color/white"/>
+                app:titleTextColor="@color/white" />
 
         </com.google.android.material.appbar.CollapsingToolbarLayout>
     </com.google.android.material.appbar.AppBarLayout>
@@ -38,13 +38,28 @@
     <androidx.core.widget.NestedScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:background="@drawable/daily_meal_bg"
         android:padding="20dp"
         app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior">
 
         <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/detailed_rec"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"/>
+            android:layout_height="wrap_content" />
 
     </androidx.core.widget.NestedScrollView>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/purple_500"
+        android:baselineAlignBottom="false"
+        android:src="@drawable/ic_baseline_shopping_cart_24"
+        android:tint="@null"
+        android:layout_marginRight="20dp"
+        app:layout_anchorGravity="end|bottom"
+        app:fabSize="normal"
+        app:layout_anchor="@id/appBar"
+        android:clickable="true"/>
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>
