@@ -38,6 +38,7 @@
     <androidx.core.widget.NestedScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:background="@drawable/daily_meal_bg"
         android:padding="20dp"
         app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior">
 
@@ -55,7 +56,10 @@
         android:baselineAlignBottom="false"
         android:src="@drawable/ic_baseline_shopping_cart_24"
         android:tint="@null"
+        android:layout_marginRight="20dp"
+        app:layout_anchorGravity="end|bottom"
         app:fabSize="normal"
-        app:layout_anchorGravity="end|bottom" />
+        app:layout_anchor="@id/appBar"
+        android:clickable="true"/>
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>
