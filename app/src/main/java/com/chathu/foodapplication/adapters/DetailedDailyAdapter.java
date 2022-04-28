@@ -31,6 +31,12 @@ public class DetailedDailyAdapter extends RecyclerView.Adapter<DetailedDailyAdap
     @Override
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
 
+        holder.imageView.setImageResource(list.get(position).getImage());
+        holder.price.setText(list.get(position).getPrice());
+        holder.name.setText(list.get(position).getName());
+        holder.description.setText(list.get(position).getDescription());
+        holder.timing.setText(list.get(position).getTiming());
+        holder.rating.setText(list.get(position).getRating());
     }
 
     @Override
