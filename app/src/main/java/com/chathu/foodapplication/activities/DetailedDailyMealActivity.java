@@ -26,6 +26,7 @@ public class DetailedDailyMealActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_detailed_daily_meal);
 
+        String type = getIntent().getStringExtra("type");
 
 
         recyclerView = findViewById(R.id.detailed_rec);
@@ -34,5 +35,10 @@ public class DetailedDailyMealActivity extends AppCompatActivity {
         detailedDailyModelList = new ArrayList<>();
         dailyAdapter = new DetailedDailyAdapter(detailedDailyModelList);
         recyclerView.setAdapter(dailyAdapter);
+
+        if (type != null && type.equalsIgnoreCase("breackfast")){
+
+            detailedDailyModelList.add(new DetailedDailyModel(R.drawable.breakfast,"Breakfast","description","4.4","40","10am to 9pm"));
+        }
     }
 }
