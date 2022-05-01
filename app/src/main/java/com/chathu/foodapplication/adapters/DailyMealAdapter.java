@@ -45,6 +45,8 @@ public class  DailyMealAdapter extends RecyclerView.Adapter<DailyMealAdapter.Vie
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(context, DetailedDailyMealActivity.class);
+                intent.putExtra("type",list.get(position).getType());
+                context.startActivity(intent);
             }
         });
     }

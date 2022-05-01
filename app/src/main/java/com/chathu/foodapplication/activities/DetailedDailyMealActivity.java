@@ -26,6 +26,8 @@ public class DetailedDailyMealActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_detailed_daily_meal);
 
+
+
         recyclerView = findViewById(R.id.detailed_rec);
         imageView = findViewById(R.id.detailed_img);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
