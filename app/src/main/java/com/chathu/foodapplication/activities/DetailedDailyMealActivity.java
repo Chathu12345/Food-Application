@@ -38,18 +38,19 @@ public class DetailedDailyMealActivity extends AppCompatActivity {
 
         if (type != null && type.equalsIgnoreCase("breakfast")){
 
-            detailedDailyModelList.add(new DetailedDailyModel(R.drawable.fav1,"Breakfast","description","4.4","40","10am to 9pm"));
-            detailedDailyModelList.add(new DetailedDailyModel(R.drawable.fav2,"Breakfast","description","4.4","40","10am to 9pm"));
-            detailedDailyModelList.add(new DetailedDailyModel(R.drawable.fav3,"Breakfast","description","4.4","40","10am to 9pm"));
+            detailedDailyModelList.add(new DetailedDailyModel(R.drawable.fav1,"Breakfast","description","4.4","40","10 to 9"));
+            detailedDailyModelList.add(new DetailedDailyModel(R.drawable.fav2,"Breakfast","description","4.4","40","10 to 9"));
+            detailedDailyModelList.add(new DetailedDailyModel(R.drawable.fav3,"Breakfast","description","4.4","40","10 to 9"));
             dailyAdapter.notifyDataSetChanged();
         }
 
         if (type != null && type.equalsIgnoreCase("sweets")){
 
             imageView.setImageResource(R.drawable.sweets);
-            detailedDailyModelList.add(new DetailedDailyModel(R.drawable.s1,"Breakfast","description","4.4","40","10am to 9pm"));
-            detailedDailyModelList.add(new DetailedDailyModel(R.drawable.s2,"Breakfast","description","4.4","40","10am to 9pm"));
-            detailedDailyModelList.add(new DetailedDailyModel(R.drawable.s3,"Breakfast","description","4.4","40","10am to 9pm"));
+            detailedDailyModelList.add(new DetailedDailyModel(R.drawable.s1,"Sweet","description","4.4","40","10am to 9pm"));
+            detailedDailyModelList.add(new DetailedDailyModel(R.drawable.s2,"Sweet","description","4.4","40","10am to 9pm"));
+            detailedDailyModelList.add(new DetailedDailyModel(R.drawable.s3,"Sweet","description","4.4","40","10am to 9pm"));
+            detailedDailyModelList.add(new DetailedDailyModel(R.drawable.s4,"Sweet","description","4.4","40","10am to 9pm"));
             dailyAdapter.notifyDataSetChanged();
         }
     }
