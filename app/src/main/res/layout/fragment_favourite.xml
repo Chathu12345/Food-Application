@@ -6,4 +6,16 @@
     android:layout_height="match_parent"
     tools:context=".ui.favourite.FavouriteFragment">
 
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="230dp"
+            android:src="@drawable/tab1"
+            android:scaleType="centerCrop"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
 </androidx.core.widget.NestedScrollView>
