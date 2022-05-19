@@ -14,7 +14,26 @@
             android:layout_width="match_parent"
             android:layout_height="230dp"
             android:src="@drawable/tab1"
-            android:scaleType="centerCrop"/>
+            android:scaleType="centerCrop"
+            android:foreground="@drawable/foreground_design"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="10 weekend Delicious \nDinner Recipes"
+            android:fontFamily="@font/amarante"
+            android:textSize="25sp"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:layout_marginLeft="10dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.7" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
