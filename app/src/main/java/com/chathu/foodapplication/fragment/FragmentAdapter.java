@@ -23,7 +23,7 @@ public class FragmentAdapter extends FragmentStateAdapter {
                 return new ThirdFragment();
         }
 
-        return null;
+        return new FirstFragment;
     }
 
     @Override
