@@ -23,11 +23,11 @@ public class FragmentAdapter extends FragmentStateAdapter {
                 return new ThirdFragment();
         }
 
-        return null;
+        return new FirstFragment();
     }
 
     @Override
     public int getItemCount() {
-        return 0;
+        return 3;
     }
 }

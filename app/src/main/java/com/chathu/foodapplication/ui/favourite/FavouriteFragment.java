@@ -7,11 +7,17 @@ import android.view.ViewGroup;
 
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
+import androidx.viewpager2.widget.ViewPager2;
 
 import com.chathu.foodapplication.R;
+import com.chathu.foodapplication.fragment.FragmentAdapter;
+import com.google.android.material.tabs.TabLayout;
 
 public class FavouriteFragment extends Fragment {
 
+    TabLayout tabLayout;
+    ViewPager2 viewPager2;
+    FragmentAdapter fragmentAdapter;
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
