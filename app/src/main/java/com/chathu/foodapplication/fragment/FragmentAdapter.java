@@ -18,6 +18,9 @@ public class FragmentAdapter extends FragmentStateAdapter {
 
         switch (position){
             case 1:
+                return new SecondFragment();
+            case 2:
+                return new ThirdFragment();
         }
 
         return null;
