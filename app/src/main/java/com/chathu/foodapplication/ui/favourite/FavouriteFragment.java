@@ -8,6 +8,7 @@ import android.view.ViewGroup;
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentActivity;
+import androidx.fragment.app.FragmentManager;
 import androidx.viewpager2.widget.ViewPager2;
 
 import com.chathu.foodapplication.R;
@@ -28,6 +29,10 @@ public class FavouriteFragment extends Fragment {
         View root = inflater.inflate(R.layout.fragment_favourite, container, false);
 
         tabLayout = root.findViewById(R.id.tab_layout);
+        viewPager2 = root.findViewById(R.id.view_pager2);
+
+        FragmentManager fm = getActivity().getSupportFragmentManager();
+        fragmentAdapter = new FragmentAdapter(fm,getLifecycle());
 
         return root;
     }
