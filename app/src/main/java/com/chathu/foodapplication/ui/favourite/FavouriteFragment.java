@@ -60,7 +60,7 @@ public class FavouriteFragment extends Fragment {
         viewPager2.registerOnPageChangeCallback(new ViewPager2.OnPageChangeCallback() {
             @Override
             public void onPageSelected(int position) {
-
+                tabLayout.selectTab(tabLayout.getTabAt(position));
             }
         });
 
