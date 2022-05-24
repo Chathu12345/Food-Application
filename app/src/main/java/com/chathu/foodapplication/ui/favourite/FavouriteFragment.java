@@ -34,6 +34,8 @@ public class FavouriteFragment extends Fragment {
         FragmentManager fm = getActivity().getSupportFragmentManager();
         fragmentAdapter = new FragmentAdapter(fm,getLifecycle());
 
+        viewPager2.setAdapter(fragmentAdapter);
+
         return root;
     }
 }
