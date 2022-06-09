@@ -29,10 +29,19 @@
             android:text="Description Here"
             android:textColor="@color/white"
             android:textStyle="bold"
+            android:fontFamily="@font/amarante"
             android:layout_marginLeft="10dp"
             android:layout_marginTop="10dp"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <TextView
+            android:id="@+id/feature_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Food Name"
+            android:textSize="20sp"
+            android:fontFamily="@font/amarante"/>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
