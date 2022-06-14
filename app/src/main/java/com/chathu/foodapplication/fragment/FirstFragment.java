@@ -42,6 +42,7 @@ public class FirstFragment extends Fragment {
        featuredModelsList.add(new FeaturedModel(R.drawable.fav3,"Featured 3","Description 3"));
 
        featuredAdapter = new FeaturedAdapter(featuredModelsList);
+       recyclerView.setAdapter(featuredAdapter);
 
        return view;
     }
