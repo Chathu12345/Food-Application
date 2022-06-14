@@ -12,6 +12,7 @@ import android.view.ViewGroup;
 import com.chathu.foodapplication.R;
 import com.chathu.foodapplication.adapters.FeaturedAdapter;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class FirstFragment extends Fragment {
@@ -29,6 +30,10 @@ public class FirstFragment extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
        View view = inflater.inflate(R.layout.fragment_first, container, false);
+
+       recyclerView = view.findViewById(R.id.featured_hor_rec);
+
+       featuredAdapterList = new ArrayList<>();
 
        return view;
     }
