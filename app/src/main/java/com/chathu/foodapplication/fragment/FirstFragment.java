@@ -11,13 +11,14 @@ import android.view.ViewGroup;
 
 import com.chathu.foodapplication.R;
 import com.chathu.foodapplication.adapters.FeaturedAdapter;
+import com.chathu.foodapplication.models.FeaturedModel;
 
 import java.util.ArrayList;
 import java.util.List;
 
 public class FirstFragment extends Fragment {
 
-    List<FeaturedAdapter> featuredAdapterList;
+    List<FeaturedModel> featuredModelsList;
     RecyclerView recyclerView;
     FeaturedAdapter featuredAdapter;
 
@@ -33,7 +34,11 @@ public class FirstFragment extends Fragment {
 
        recyclerView = view.findViewById(R.id.featured_hor_rec);
 
-       featuredAdapterList = new ArrayList<>();
+       featuredModelsList = new ArrayList<>();
+
+       featuredModelsList.add(new FeaturedModel(R.drawable.fav1,"Featured 1","Description 1"));
+       featuredModelsList.add(new FeaturedModel(R.drawable.fav2,"Featured 2","Description 2"));
+       featuredModelsList.add(new FeaturedModel(R.drawable.fav3,"Featured 3","Description 3"));
 
        return view;
     }
