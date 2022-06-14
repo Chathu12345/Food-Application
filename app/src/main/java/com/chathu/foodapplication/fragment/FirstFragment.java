@@ -34,7 +34,7 @@ public class FirstFragment extends Fragment {
        View view = inflater.inflate(R.layout.fragment_first, container, false);
 
        recyclerView = view.findViewById(R.id.featured_hor_rec);
-       recyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
+       recyclerView.setLayoutManager(new LinearLayoutManager(getContext(),RecyclerView.HORIZONTAL,false));
        featuredModelsList = new ArrayList<>();
 
        featuredModelsList.add(new FeaturedModel(R.drawable.fav1,"Featured 1","Description 1"));
