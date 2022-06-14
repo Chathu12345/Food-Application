@@ -3,6 +3,7 @@ package com.chathu.foodapplication.fragment;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
+import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.view.LayoutInflater;
@@ -11,13 +12,14 @@ import android.view.ViewGroup;
 
 import com.chathu.foodapplication.R;
 import com.chathu.foodapplication.adapters.FeaturedAdapter;
+import com.chathu.foodapplication.models.FeaturedModel;
 
 import java.util.ArrayList;
 import java.util.List;
 
 public class FirstFragment extends Fragment {
 
-    List<FeaturedAdapter> featuredAdapterList;
+    List<FeaturedModel> featuredModelsList;
     RecyclerView recyclerView;
     FeaturedAdapter featuredAdapter;
 
@@ -32,8 +34,15 @@ public class FirstFragment extends Fragment {
        View view = inflater.inflate(R.layout.fragment_first, container, false);
 
        recyclerView = view.findViewById(R.id.featured_hor_rec);
+       recyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
+       featuredModelsList = new ArrayList<>();
 
-       featuredAdapterList = new ArrayList<>();
+       featuredModelsList.add(new FeaturedModel(R.drawable.fav1,"Featured 1","Description 1"));
+       featuredModelsList.add(new FeaturedModel(R.drawable.fav2,"Featured 2","Description 2"));
+       featuredModelsList.add(new FeaturedModel(R.drawable.fav3,"Featured 3","Description 3"));
+
+       featuredAdapter = new FeaturedAdapter(featuredModelsList);
+       recyclerView.setAdapter(featuredAdapter);
 
        return view;
     }
