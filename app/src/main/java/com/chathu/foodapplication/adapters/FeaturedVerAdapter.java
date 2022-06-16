@@ -1,5 +1,6 @@
 package com.chathu.foodapplication.adapters;
 
+import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
@@ -9,22 +10,40 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.chathu.foodapplication.R;
+import com.chathu.foodapplication.models.FeaturedVerModel;
+
+import java.util.List;
 
 public class FeaturedVerAdapter extends RecyclerView.Adapter<FeaturedVerAdapter.ViewHolder> {
+
+    List<FeaturedVerModel> list;
+
+    public FeaturedVerAdapter(List<FeaturedVerModel> list) {
+        this.list = list;
+    }
+
     @NonNull
     @Override
     public ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        return null;
+        return new ViewHolder(LayoutInflater.from(parent.getContext()).inflate(R.layout.featured_ver_item,parent,false));
     }
 
     @Override
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
 
+        holder.imageView.setImageResource(list.get(position).getImage());
+        holder.name.setText(list.get(position).getName());
+        holder.description.setText(list.get(position).getDescription());
+        holder.rating.setText(list.get(position).getRating());
+        holder.timing.setText(list.get(position).getTiming());
+
+
+
     }
 
     @Override
     public int getItemCount() {
-        return 0;
+        return list.size();
     }
 
     public class ViewHolder extends RecyclerView.ViewHolder {
