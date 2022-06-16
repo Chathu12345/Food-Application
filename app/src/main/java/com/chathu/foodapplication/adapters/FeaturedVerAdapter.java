@@ -2,9 +2,13 @@ package com.chathu.foodapplication.adapters;
 
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
+import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
+
+import com.chathu.foodapplication.R;
 
 public class FeaturedVerAdapter extends RecyclerView.Adapter<FeaturedVerAdapter.ViewHolder> {
     @NonNull
@@ -24,8 +28,19 @@ public class FeaturedVerAdapter extends RecyclerView.Adapter<FeaturedVerAdapter.
     }
 
     public class ViewHolder extends RecyclerView.ViewHolder {
+
+        ImageView imageView;
+        TextView name,description,rating,timing;
+
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
+
+            imageView = itemView.findViewById(R.id.detailed_img);
+            name = itemView.findViewById(R.id.detailed_name);
+            description = itemView.findViewById(R.id.detailed_des);
+            rating = itemView.findViewById(R.id.detailed_rating);
+            timing = itemView.findViewById(R.id.detailed_timing);
+
         }
     }
 }
