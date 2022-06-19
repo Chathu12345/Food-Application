@@ -12,16 +12,24 @@ import android.view.ViewGroup;
 
 import com.chathu.foodapplication.R;
 import com.chathu.foodapplication.adapters.FeaturedAdapter;
+import com.chathu.foodapplication.adapters.FeaturedVerAdapter;
 import com.chathu.foodapplication.models.FeaturedModel;
+import com.chathu.foodapplication.models.FeaturedVerModel;
 
 import java.util.ArrayList;
 import java.util.List;
 
 public class FirstFragment extends Fragment {
 
+    /////////////Featured Hor RecyclerView
     List<FeaturedModel> featuredModelsList;
     RecyclerView recyclerView;
     FeaturedAdapter featuredAdapter;
+
+    /////////////Featured Ver RecyclerView
+    List<FeaturedVerModel> featuredVerModelList;
+    RecyclerView recyclerView2;
+    FeaturedVerAdapter featuredVerAdapter;
 
     public FirstFragment() {
         // Required empty public constructor
