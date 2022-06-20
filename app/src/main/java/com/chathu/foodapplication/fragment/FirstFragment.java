@@ -60,6 +60,13 @@ public class FirstFragment extends Fragment {
         recyclerView2.setLayoutManager(new LinearLayoutManager(getContext(),RecyclerView.HORIZONTAL,false));
         featuredVerModelList = new ArrayList<>();
 
+        featuredVerModelList.add(new FeaturedVerModel(R.drawable.ver1,"Featured 1","Description 1","4.8","10:00 - 8:00"));
+        featuredVerModelList.add(new FeaturedVerModel(R.drawable.ver2,"Featured 2","Description 2","4.5","10:00 - 8:00"));
+        featuredVerModelList.add(new FeaturedVerModel(R.drawable.ver3,"Featured 3","Description 3","5.0","10:00 - 8:00"));
+
+        featuredVerAdapter = new FeaturedVerAdapter(featuredVerModelList);
+        recyclerView2.setAdapter(featuredVerAdapter);
+
        return view;
     }
 }
