@@ -6,6 +6,7 @@
         <entry key="..\:/my projects/Food-Application/app/src/main/res/drawable/daily_meal_bg.xml" value="0.1" />
         <entry key="..\:/my projects/Food-Application/app/src/main/res/drawable/foreground_design.xml" value="0.1" />
         <entry key="..\:/my projects/Food-Application/app/src/main/res/layout/activity_detailed_daily_meal.xml" value="0.1" />
+        <entry key="..\:/my projects/Food-Application/app/src/main/res/layout/activity_welcome.xml" value="0.1" />
         <entry key="..\:/my projects/Food-Application/app/src/main/res/layout/detailed_daily_meal_item.xml" value="0.1" />
         <entry key="..\:/my projects/Food-Application/app/src/main/res/layout/featured.xml" value="0.1" />
         <entry key="..\:/my projects/Food-Application/app/src/main/res/layout/featured_hor_item.xml" value="0.47619047619047616" />
@@ -15,6 +16,7 @@
         <entry key="..\:/my projects/Food-Application/app/src/main/res/layout/fragment_first.xml" value="0.1" />
         <entry key="..\:/my projects/Food-Application/app/src/main/res/layout/fragment_second.xml" value="0.1" />
         <entry key="..\:/my projects/Food-Application/app/src/main/res/layout/fragment_third.xml" value="0.1" />
+        <entry key="..\:/my projects/Food-Application/app/src/main/res/layout/home_horizontal_item.xml" value="0.1" />
       </map>
     </option>
   </component>
