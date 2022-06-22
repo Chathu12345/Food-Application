@@ -9,11 +9,6 @@ import androidx.fragment.app.Fragment;
 
 import com.chathu.foodapplication.R;
 
-/**
- * A simple {@link Fragment} subclass.
- * Use the {@link CartFragment#newInstance} factory method to
- * create an instance of this fragment.
- */
 public class CartFragment extends Fragment {
 
     // TODO: Rename parameter arguments, choose names that match
