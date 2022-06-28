@@ -36,7 +36,7 @@ public class CartFragment extends Fragment {
         recyclerView = view.findViewById(R.id.cart_rec);
         recyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
         list = new ArrayList<>();
-        
+
         list.add(new CartModel(R.drawable.s1,"Order 1","$30","4.3"));
         list.add(new CartModel(R.drawable.s2,"Order 2","$20","4.6"));
         list.add(new CartModel(R.drawable.fav1,"Order 3","$40","4.4"));
@@ -44,7 +44,8 @@ public class CartFragment extends Fragment {
         list.add(new CartModel(R.drawable.s2,"Order 2","$20","4.3"));
         list.add(new CartModel(R.drawable.fav1,"Order 3","$40","4.3"));
         cartAdapter = new CartAdapter(list);
-
+        recyclerView.setAdapter(cartAdapter);
+        
         return view;
     }
 }
