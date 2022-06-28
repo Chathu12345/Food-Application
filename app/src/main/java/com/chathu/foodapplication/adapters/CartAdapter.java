@@ -2,11 +2,25 @@ package com.chathu.foodapplication.adapters;
 
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
+import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.chathu.foodapplication.R;
+import com.chathu.foodapplication.models.CartModel;
+
+import java.util.List;
+
 public class CartAdapter extends RecyclerView.Adapter<CartAdapter.ViewHolder> {
+
+    List<CartModel> list;
+
+    public CartAdapter(List<CartModel> list) {
+        this.list = list;
+    }
+
     @NonNull
     @Override
     public ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
@@ -20,12 +34,21 @@ public class CartAdapter extends RecyclerView.Adapter<CartAdapter.ViewHolder> {
 
     @Override
     public int getItemCount() {
-        return 0;
+        return list.size();
     }
 
     public class ViewHolder extends RecyclerView.ViewHolder {
+
+        ImageView imageView;
+        TextView name,rating,price;
+
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
+
+            imageView = itemView.findViewById(R.id.detailed_img);
+            name = itemView.findViewById(R.id.detailed_name);
+            rating = itemView.findViewById(R.id.detailed_rating);
+            price = itemView.findViewById(R.id.detailed_price);
         }
     }
 }
