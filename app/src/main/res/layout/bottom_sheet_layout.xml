@@ -6,6 +6,11 @@
 
     <TextView
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
+        android:layout_height="wrap_content"
+        android:text="Order Now"
+        android:textColor="@color/purple_500"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:fontFamily="@font/amita"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
