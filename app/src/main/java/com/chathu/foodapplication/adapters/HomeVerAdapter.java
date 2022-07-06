@@ -34,8 +34,17 @@ public class HomeVerAdapter extends RecyclerView.Adapter<HomeVerAdapter.ViewHold
     @Override
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
 
+        final String mName = list.get(position).getName();
+        final String mTiming = list.get(position).getTiming();
+        final String mRating = list.get(position).getRating();
+        final String mPrice = list.get(position).getPrice();
+
+
         holder.imageView.setImageResource(list.get(position).getImage());
         holder.name.setText(list.get(position).getName());
+        holder.timing.setText(list.get(position).getTiming());
+        holder.rating.setText(list.get(position).getRating());
+        holder.price.setText(list.get(position).getPrice());
     }
 
     @Override

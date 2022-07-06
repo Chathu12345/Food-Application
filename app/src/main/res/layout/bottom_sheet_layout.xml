@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:id="@+id/bottom_sheet">
+    android:id="@+id/bottom_sheet"
+    android:background="@drawable/bottom_sheet_bg">
 
     <TextView
         android:id="@+id/textView5"
