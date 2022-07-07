@@ -24,10 +24,12 @@
     <style name="Theme.FoodApplication.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
     
     <style name="BottomSheetTheme" parent="Theme.Design.BottomSheetDialog">
-
-        
+        <item name="bottomSheetStyle">@style/BottomSheetStyle</item>
     </style>
 
+    <style name="BottomSheetStyle" parent="Widget.Design.BottomSheet.Modal">
+        <item name="android:background">@android:color/transparent</item>
+    </style>
     <style name="Theme.FoodApplication.Button" >
     <item name="colorPrimary">@color/purple_500</item>
     </style>
