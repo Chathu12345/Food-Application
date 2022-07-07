@@ -22,6 +22,11 @@
     <style name="Theme.FoodApplication.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
 
     <style name="Theme.FoodApplication.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+    
+    <style name="BottomSheetTheme" parent="Theme.Design.BottomSheetDialog">
+
+        
+    </style>
 
     <style name="Theme.FoodApplication.Button" >
     <item name="colorPrimary">@color/purple_500</item>
