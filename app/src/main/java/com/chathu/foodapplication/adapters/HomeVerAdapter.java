@@ -12,11 +12,13 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.chathu.foodapplication.R;
 import com.chathu.foodapplication.models.HomeVerModel;
+import com.google.android.material.bottomsheet.BottomSheetDialog;
 
 import java.util.ArrayList;
 
 public class HomeVerAdapter extends RecyclerView.Adapter<HomeVerAdapter.ViewHolder> {
 
+    private BottomSheetDialog bottomSheetDialog;
     Context context;
     ArrayList<HomeVerModel> list;
 
@@ -49,7 +51,8 @@ public class HomeVerAdapter extends RecyclerView.Adapter<HomeVerAdapter.ViewHold
         holder.itemView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                
+
+                bottomSheetDialog = new BottomSheetDialog(context,R.style.BottomSheetTheme);
             }
         });
     }
