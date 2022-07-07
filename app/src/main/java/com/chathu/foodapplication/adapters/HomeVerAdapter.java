@@ -45,6 +45,13 @@ public class HomeVerAdapter extends RecyclerView.Adapter<HomeVerAdapter.ViewHold
         holder.timing.setText(list.get(position).getTiming());
         holder.rating.setText(list.get(position).getRating());
         holder.price.setText(list.get(position).getPrice());
+
+        holder.itemView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                
+            }
+        });
     }
 
     @Override
