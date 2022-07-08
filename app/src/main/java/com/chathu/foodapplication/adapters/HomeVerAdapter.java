@@ -59,7 +59,8 @@ public class HomeVerAdapter extends RecyclerView.Adapter<HomeVerAdapter.ViewHold
                 sheetView.findViewById(R.id.add_to_cart).setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
-                        Toast.makeText(context,"",Toast.LENGTH_SHORT).show();
+                        Toast.makeText(context,"Added to a Cart",Toast.LENGTH_SHORT).show();
+                        bottomSheetDialog.dismiss();
                     }
                 });
             }
