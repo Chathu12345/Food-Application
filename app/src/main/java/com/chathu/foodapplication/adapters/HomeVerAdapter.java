@@ -55,6 +55,7 @@ public class HomeVerAdapter extends RecyclerView.Adapter<HomeVerAdapter.ViewHold
                 bottomSheetDialog = new BottomSheetDialog(context,R.style.BottomSheetTheme);
 
                 View sheetView = LayoutInflater.from(context).inflate(R.layout.bottom_sheet_layout,null);
+                sheetView.findViewById(R.id.add_to_cart);
             }
         });
     }
