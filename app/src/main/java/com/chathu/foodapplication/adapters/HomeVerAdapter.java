@@ -63,6 +63,8 @@ public class HomeVerAdapter extends RecyclerView.Adapter<HomeVerAdapter.ViewHold
                         bottomSheetDialog.dismiss();
                     }
                 });
+
+                ImageView bottomImg = sheetView.findViewById(R.id.bottom_img);
             }
         });
     }

@@ -37,7 +37,7 @@
         app:layout_constraintTop_toBottomOf="@+id/view">
 
         <com.makeramen.roundedimageview.RoundedImageView
-            android:id="@+id/detailed_img"
+            android:id="@+id/bottom_img"
             android:layout_width="130dp"
             android:layout_height="110dp"
             android:layout_margin="10dp"
@@ -52,7 +52,7 @@
             android:layout_marginLeft="4dp">
 
             <TextView
-                android:id="@+id/detailed_name"
+                android:id="@+id/bottom_name"
                 android:fontFamily="@font/amarante"
                 android:text="Name"
                 android:textSize="24sp"
@@ -64,7 +64,7 @@
                 android:layout_height="wrap_content"/>
 
             <TextView
-                android:id="@+id/detailed_des"
+                android:id="@+id/bottom_des"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Description"
@@ -86,7 +86,7 @@
                     android:layout_marginTop="2dp"/>
 
                 <TextView
-                    android:id="@+id/detailed_rating"
+                    android:id="@+id/bottom_rating"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textStyle="bold"
@@ -100,7 +100,7 @@
                     android:layout_marginTop="2dp"/>
 
                 <TextView
-                    android:id="@+id/detailed_timing"
+                    android:id="@+id/bottom_timing"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="4dp"
@@ -125,7 +125,7 @@
                     tools:ignore="MissingConstraints" />
 
                 <TextView
-                    android:id="@+id/detailed_price"
+                    android:id="@+id/bottom_price"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="120.0"
