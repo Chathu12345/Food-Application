@@ -65,6 +65,9 @@ public class HomeVerAdapter extends RecyclerView.Adapter<HomeVerAdapter.ViewHold
                 });
 
                 ImageView bottomImg = sheetView.findViewById(R.id.bottom_img);
+                TextView bottomName = sheetView.findViewById(R.id.bottom_name);
+                TextView bottomPrice = sheetView.findViewById(R.id.bottom_price);
+                TextView bottomRating = sheetView.findViewById(R.id.bottom_rating);
             }
         });
     }
