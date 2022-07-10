@@ -41,6 +41,7 @@ public class HomeVerAdapter extends RecyclerView.Adapter<HomeVerAdapter.ViewHold
         final String mTiming = list.get(position).getTiming();
         final String mRating = list.get(position).getRating();
         final String mPrice = list.get(position).getPrice();
+        final int mImage = list.get(position).getImage();
 
 
         holder.imageView.setImageResource(list.get(position).getImage());
@@ -68,6 +69,11 @@ public class HomeVerAdapter extends RecyclerView.Adapter<HomeVerAdapter.ViewHold
                 TextView bottomName = sheetView.findViewById(R.id.bottom_name);
                 TextView bottomPrice = sheetView.findViewById(R.id.bottom_price);
                 TextView bottomRating = sheetView.findViewById(R.id.bottom_rating);
+
+                bottomName.setText(mName);
+                bottomPrice.setText(mPrice);
+                bottomRating.setText(mRating);
+                bottomImg.setImageResource(mImage);
             }
         });
     }
