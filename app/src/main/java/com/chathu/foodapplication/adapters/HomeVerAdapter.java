@@ -6,6 +6,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
@@ -55,7 +56,15 @@ public class HomeVerAdapter extends RecyclerView.Adapter<HomeVerAdapter.ViewHold
                 bottomSheetDialog = new BottomSheetDialog(context,R.style.BottomSheetTheme);
 
                 View sheetView = LayoutInflater.from(context).inflate(R.layout.bottom_sheet_layout,null);
-                sheetView.findViewById(R.id.add_to_cart);
+                sheetView.findViewById(R.id.add_to_cart).setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        Toast.makeText(context,"Added to a Cart",Toast.LENGTH_SHORT).show();
+                        bottomSheetDialog.dismiss();
+                    }
+                });
+
+                ImageView bottomImg = sheetView.findViewById(R.id.bottom_img);
             }
         });
     }
