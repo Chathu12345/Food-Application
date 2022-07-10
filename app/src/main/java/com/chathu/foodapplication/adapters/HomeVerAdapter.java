@@ -76,6 +76,7 @@ public class HomeVerAdapter extends RecyclerView.Adapter<HomeVerAdapter.ViewHold
                 bottomImg.setImageResource(mImage);
 
                 bottomSheetDialog.setContentView(sheetView);
+                bottomSheetDialog.show();
             }
         });
     }
